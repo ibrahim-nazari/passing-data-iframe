@@ -121,7 +121,7 @@
 
       // Listen to messages from parent window
       bindEvent(window, "message", function (e) {
-        results.innerHTML = e.data;
+        results.innerHTML = JSON.stringify(e.data);
       });
 
       // Send random message data on every button click
